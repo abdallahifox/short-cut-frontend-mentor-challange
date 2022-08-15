@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*HELPERS*/
+
+:root{
+--Gray: hsl(0, 0%, 75%);
+--Grayish-Violet: hsl(257, 7%, 63%);
+--Very-Dark-Blue: hsl(255, 11%, 22%);
+--Very-Dark-Violet: hsl(260, 8%, 14%);
+--Cyan: hsl(180, 66%, 49%);
+--Dark-Violet: hsl(257, 27%, 26%);
+--Red: hsl(0, 87%, 67%);
+
+}
+
+html,
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size:18px;
+    scroll-behavior: smooth
+}
+
+.bg-dark{
+    background-color: var(--Dark-Violet);
+}
+
+.cyan-color{
+    color: var(--Cyan);
+}
+.darkcolor{
+    color: var(--Very-Dark-Violet);
+}
+
+.headeing{
+    color: var(--Very-Dark-Violet);
+}
+
+.pharaghraph{
+    color: var(--Grayish-Violet);
+}
+
+.placeholder{
+    color: var(--Gray);
+}
+
+.bg-button{
+background-color: var(--Cyan);
+color: #fff;
+}
+
+.error-border{
+    border: 1px solid var(--Red)
+}
+
+.error-color{
+    color: var(--Red);
+}
+
+
+
+.scale-up {
+	-webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+.scale-leave {
+	-webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) reverse both;
+	        animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) reverse both;
+}
+
+.shorten__box{
+    background-image: url('./assets/images/bgBoostDesktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cta {
+    background-image: url('./assets/images/bgShortenDesktop.svg');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width:767px){
+    .shorten__box{
+        background-image: url('./assets/images/bgBoostMobile.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .cta {
+        background-image: url('./assets/images/bgShortenMobile.svg');
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+}
+
+
+  
+
+/**
+ * ----------------------------------------
+ * animation scale-up-ver-top
+ * ----------------------------------------
+ */
+ @-webkit-keyframes scale-up {
+    0% {
+      -webkit-transform: scaleY(0.4);
+              transform: scaleY(0.4);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+  }
+  @keyframes scale-up-ver-top {
+    0% {
+      -webkit-transform: scaleY(0.4);
+              transform: scaleY(0.4);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+  }
+
+
+
+
+  
+
