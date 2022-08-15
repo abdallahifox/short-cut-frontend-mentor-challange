@@ -16,7 +16,7 @@ function App() {
   const ShortenCtx = useContext(ShortenContext);
   return (
     <div className="w-full">
-      <div className="mx-20 py-10 h-[56px]">
+      <div className="mx-10 md:mx-20 py-10 h-[56px]">
         <Navbar />
       </div>
       <div className="ml-0 sm:ml-20 py-20">
