@@ -32,6 +32,7 @@ function navbar() {
                 return (
                   <li
                     key={item.id}
+                    onClick={() => setIsOpen((prevState) => !prevState)}
                     className="text-white text-xs my-4 cursor-pointer hover:text-blue-300"
                   >
                     <a href={`#${item.title}`}> {item.title}</a>
